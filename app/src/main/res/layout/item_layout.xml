@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.rainnshieh.dragswipe.views.SwipeLayout
+    android:id="@+id/swipe"
+    xmlns:swipe="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    swipe:clickToClose="true"
+    swipe:drag_edge="right"
+    swipe:leftEdgeSwipeOffset="0dp"
+    swipe:rightEdgeSwipeOffset="0dp">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:tag="Bottom0"
+        android:weightSum="10">
+
+        <RelativeLayout
+            android:id="@+id/action_edit"
+            android:background="#00ff00"
+            android:layout_width="70dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_centerInParent="true"
+                android:id="@+id/tv_edit"
+                android:text="编辑"
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/action_delete"
+            android:background="#ff0062"
+            android:layout_width="70dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:layout_centerInParent="true"
+                android:id="@+id/trash"
+                android:text="删除"
+                android:textColor="#000"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+
+    </LinearLayout>
+    <TextView
+        android:gravity="center"
+        android:id="@+id/drag_handle"
+        android:padding="5dp"
+        android:text="内容"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</com.rainnshieh.dragswipe.views.SwipeLayout>

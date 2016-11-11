@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/activity_main"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.rainnshieh.dragswipe.MainActivity">
+    <Switch
+        android:id="@+id/swit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <com.rainnshieh.dragswipe.views.DragSortListView
+        android:id="@+id/drag_sort_listView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollingCache="false"
+        app:collapsed_height="1px"
+        app:drag_enabled="true"
+        app:drag_handle_id="@+id/drag_handle"
+        app:drag_scroll_start="0.33"
+        app:drag_start_mode="onLongPress"
+        app:float_alpha="0.6"
+        app:remove_enabled="false"
+        app:remove_mode="clickRemove"
+        app:slide_shuffle_speed="0.3"/>
+</LinearLayout>
